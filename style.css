@@ -15,14 +15,16 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 100% !important;
 }
 
 .menu-section {
-    width: 30%; 
+    width: 100%; 
     margin: 10px;
     background-color: #fff;
     border: 2px solid black;
     box-sizing: border-box;
+    text-align: center;
 }
 .menu-section p{
     margin: 10px;
@@ -30,16 +32,16 @@ h1 {
 
 .menu-section > div{
     width: 100%;
-    justify-content: right;
+    justify-content: center;
     display: flex;
+    
+
 }
 
 .menu-section > div > div {
     display: flex;
     justify-content: center;
-    width: 110px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
+    width: 130px;
 }
 
 
@@ -51,22 +53,17 @@ h1 {
     color: #666;
 }
 
+.navbar-nav{
+    display: none !important;
+}
 
 @media screen and (max-width: 991px) {
-    .menu-section {
-        width: 40%; /* Dos elementos en la misma fila */
-        min-width: initial; /* Reinicia el min-width */
-    }
 
-    .menu-section:nth-child(3) {
-        width: 90%; /* El tercer elemento ocupa toda la línea */
+    .navbar-nav{
+        display: flex !important;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .menu-section {
-        width: 80% !important;
-        width: 80% !important;
-    }
 }
 
