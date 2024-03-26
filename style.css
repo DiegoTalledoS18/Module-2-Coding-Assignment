@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-section {
+    width: 30%; 
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.menu-section p{
+    margin: 10px;
+}
+
+.menu-section > div{
+    width: 100%;
+    justify-content: right;
+    display: flex;
+}
+
+.menu-section > div > div {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+.menu-section h2 {
+    margin: 0;
+}
+
+.menu-section p {
+    color: #666;
+}
+
+
+@media screen and (max-width: 991px) {
+    .menu-section {
+        width: 40%; /* Dos elementos en la misma fila */
+        min-width: initial; /* Reinicia el min-width */
+    }
+
+    .menu-section:nth-child(3) {
+        width: 90%; /* El tercer elemento ocupa toda la línea */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-section {
+        width: 80% !important;
+        width: 80% !important;
+    }
+}
+
